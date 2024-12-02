@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:skyblue;
+           
+
+    
+        }
+        h1{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 20px;
+        }
+        form{
+            background-color:mediumspringgreen;
+            margin: 80px auto;
+            padding: 8px;
+            text-align: center;
+            border-radius: 20px;
+            border:0px solid black;
+            height: 455px;
+            width: 350px;
+            box-shadow: 0px 0px 20px ;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            
+            
+
+        }
+
+        form input[type="submit"] {
+            width: 60%;
+            background: rgb(13, 90, 191);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 16px;}
+            form input[type="text"],
+        form input[type="password"] {
+            width: 80%;
+            height:20px;
+            padding: 5px auto;
+            margin: 5px 0;
+            border: 4px solid transparent;
+            border-radius: 20px;
+            
+        background: rgba(225,255,255,0.3);
+    }
+            form input[type="email"],form input[type="number"]{
+                width: 80%;
+            padding: 5px auto;
+            margin: 5px 0;
+            height:20px;
+            border: 4px solid transparent;
+            border-radius: 20px;
+            background: rgba(225,255,255,0.3);
+            color:white;
+        }
+            
+    </style>
+    
+</head>
+<body>
+
+        <form action="login.html" method="get">
+            <h1>SignUp Here</h1>
+           <input type="text" name="username" placeholder="Username" pattern="[a-zA-Z0-9]+{9}" title="only name and number" required><br><br>
+                <input type="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9]+@[a-z]+\.[a-z]{2,4}"required><br><br>
+                <input type="number" name="number" placeholder="Phone Number"><br><br>
+                <input type="password" name="password" placeholder="Password" required><br><br>
+                <input type="password" name="confirmpassword" placeholder="confirmPassword"><br><br>
+                <input type="submit" value="signup">
+        <p>Already have an account?<a href="login.html">login</a></p>
+            </form>
+        
+    </form>
+</body>
+</html>
